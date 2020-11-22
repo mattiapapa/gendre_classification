@@ -24,8 +24,8 @@ The applifaction of librosa.feature.melspectrogram to an audiofile of duration 1
 *GaussianNB*, *Decision Tree* and *MLP* Classifiers are chosen and implemented with sklearn library. Each classifier is trained and evaluated on the extracted MFCCs features and performances are reported with a confusion matrix, where in x_axis are reported the true values, in the y_axis the predicted ones. The diagonal of the confusion matrix tells us when the classifiers performs a correct prediction. 
 
 At the end a *CNN* is implemented thorugh tensorflow.keras. The architecture of the model follows the famous VGGISH, but weights are not initialized and the all training is performed from random weights. From the model.sumary() it is possibile to see 84,858,113 trainable parameters. 
-Before the evaluation on the test set, best weights stored thorugh the callbacks are loaded and then performances are monitored. In this case, all the metrics on train, validation 
-and test are reported and confusion matrices produced. 
+
+Before the evaluation on the test set, best weights stored thorugh the callbacks are loaded and then performances are monitored. In this case, all the metrics on train, validation and test are reported and confusion matrices produced. 
 
 ## Some comments 
 As expected, CNN works the best and that generally true, but for specific applications tailored for other Classifiers. 
