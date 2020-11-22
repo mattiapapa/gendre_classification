@@ -1,7 +1,12 @@
 import struct
 import numpy as np
 import webrtcvad
-from gendre_classification.properties import  fs, win_dur
+
+
+fs = 16000  # LibriSpeech sampling frequency [Hz]
+dur = 1     # Audio duration [s]
+win_dur = 0.02
+max_attempts = 20
 
 
 def float2pcm(sig, dtype='int16'):
