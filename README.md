@@ -27,5 +27,7 @@ and test are reported and confusion matrices produced.
 
 ## Some comments 
 As expected, CNN works the best and that generally true, but for specific applications tailored for other Classifiers. 
+
 The GaussianNB Classifier working principles are based on Bayes' probability and it gives the worst results. It is a statistical only based classifier and jointed probabilities are not given, but estrapolated from features.
+
 Decision Tree and MLP, even if implemented in a simple way, are "mid" classifiers with good performances and short computational times. Probably, the MLP algorithm is too accurate on the training set (due to hidden layers definition): sometimes a good degree of error is necessary for the success of the classification (for example, it avoids overfitting!) and allows to better generalize on the outputs.
