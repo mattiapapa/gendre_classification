@@ -265,10 +265,10 @@ print('Best weights loaded')
 test_error, test_accuracy = model_CNN.evaluate(X_test, labels_test, verbose=1)
 print(f'Accuracy on the test set is {test_accuracy}')
 
-# Store all the predictions in Train&Test and plot Heatmap
-for d in range(X_train):
-    x = X_train[d]
-    y = labels_train[d]
-X_sample = X_test[89]
-y_sample = labels_test[89]
-predict(model_CNN, X_sample, y_sample)
+# # Store all the predictions in Train&Test and plot Heatmap
+# for d in range(X_train):
+#     x = X_train[d]
+#     y = labels_train[d]
+# X_sample = X_test[89]
+# y_sample = labels_test[89]
+# predict(model_CNN, X_sample, y_sample)
