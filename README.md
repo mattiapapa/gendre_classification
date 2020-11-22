@@ -1,5 +1,9 @@
 # Gendre Classification
-Implemented script for gendre classification purpose.
+Implemented script for gendre classification purpose. In 
+```bash
+gendre_classification.ipynb
+```
+all the script with corresponding outputs is reported. 
 
 ## Overview 
 - Data loading
