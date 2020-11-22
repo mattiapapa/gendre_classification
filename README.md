@@ -24,3 +24,8 @@ The applifaction of librosa.feature.melspectrogram to an audiofile of duration 1
 At the end a *CNN* is implemented thorugh tensorflow.keras. The architecture of the model follows the famous VGGISH, but weights are not initialized and the all training is performed from random weights. From the model.sumary() it is possibile to see 84,858,113 trainable parameters. 
 Before the evaluation on the test set, best weights stored thorugh the callbacks are loaded and then performances are monitored. In this case, all the metrics on train, validation 
 and test are reported and confusion matrices produced. 
+
+## Some comments 
+As expected, CNN works the best and that generally true, but for specific applications tailored for other Classifiers. 
+The GaussianNB Classifier working principles are based on Bayes' probability and it gives the worst results. It is a statistical only based classifier and jointed probabilities are not given, but estrapolated from features.
+Decision Tree and MLP, even if implemented in a simple way, are "mid" classifiers with good performances and short computational times. Probably, the MLP algorithm is too accurate on the training set (due to hidden layers definition): sometimes a good degree of error is necessary for the success of the classification (for example, it avoids overfitting!) and allows to better generalize on the outputs.
